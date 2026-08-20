@@ -1,8 +1,8 @@
-import { Box, type SxProps, type Theme } from "@mui/material";
+import { Box, type SxProps, type Theme } from '@mui/material'
 
 interface Props {
-  name: string;
-  sx?: SxProps<Theme>;
+  name: string
+  sx?: SxProps<Theme>
 }
 
 export default function AppSvg({ name, sx }: Props) {
@@ -10,5 +10,5 @@ export default function AppSvg({ name, sx }: Props) {
     <Box component="svg" role="presentation" aria-hidden="true" sx={sx}>
       <use href={`/icons.svg#${name}`} />
     </Box>
-  );
+  )
 }

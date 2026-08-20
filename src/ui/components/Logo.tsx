@@ -1,14 +1,14 @@
-import AppImage from "../../components/AppImage.tsx";
-import AppBox from "../../components/AppBox.tsx";
+import AppImage from '../../components/AppImage.tsx'
+import AppBox from '../../components/AppBox.tsx'
 
 export default function Logo() {
   return (
     <AppBox
       sx={{
-        position: "relative",
-        "& img": {
+        position: 'relative',
+        '& img': {
           insetInline: 0,
-          margin: "0 auto",
+          margin: '0 auto',
         },
       }}
     >
@@ -17,7 +17,7 @@ export default function Logo() {
         width="170"
         height="179"
         sx={{
-          position: "relative",
+          position: 'relative',
           zIndex: 0,
         }}
       />
@@ -26,14 +26,14 @@ export default function Logo() {
         src="react"
         alt="React logo"
         sx={{
-          position: "absolute",
+          position: 'absolute',
           insetInline: 0,
-          margin: "0 auto",
+          margin: '0 auto',
           zIndex: 1,
           top: 34,
           height: 28,
           transform:
-            "perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4)",
+            'perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4)',
         }}
       />
 
@@ -41,17 +41,17 @@ export default function Logo() {
         src="vite"
         alt="Vite logo"
         sx={{
-          position: "absolute",
+          position: 'absolute',
           insetInline: 0,
-          margin: "0 auto",
+          margin: '0 auto',
           zIndex: 0,
           top: 107,
           height: 26,
-          width: "auto",
+          width: 'auto',
           transform:
-            "perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8)",
+            'perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8)',
         }}
       />
     </AppBox>
-  );
+  )
 }

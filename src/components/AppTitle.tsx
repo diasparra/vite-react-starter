@@ -1,21 +1,21 @@
-import { Typography, type TypographyProps } from "@mui/material";
-import type { ReactNode } from "react";
+import { Typography, type TypographyProps } from '@mui/material'
+import type { ReactNode } from 'react'
 
 interface Props {
-  value: ReactNode;
-  type?: "title" | "subtitle";
+  value: ReactNode
+  type?: 'title' | 'subtitle'
 }
 
 export default function AppTitle({ value, type }: Props) {
-  let variant: TypographyProps["variant"] = "body1";
+  let variant: TypographyProps['variant'] = 'body1'
 
   switch (type) {
-    case "title":
-      variant = "h3";
-      break;
-    case "subtitle":
-      variant = "h5";
-      break;
+    case 'title':
+      variant = 'h3'
+      break
+    case 'subtitle':
+      variant = 'h5'
+      break
   }
 
   return (
@@ -27,5 +27,5 @@ export default function AppTitle({ value, type }: Props) {
     >
       {value}
     </Typography>
-  );
+  )
 }

@@ -1,7 +1,7 @@
 interface Props {
-  value: string;
+  value: string
 }
 
 export default function AppCode({ value }: Props) {
-  return <code>{value}</code>;
+  return <code>{value}</code>
 }

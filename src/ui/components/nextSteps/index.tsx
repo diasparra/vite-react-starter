@@ -1,28 +1,28 @@
-import NextStepCard from "./NextStepCard.tsx";
-import NextStepLink from "./NextStepLink.tsx";
-import AppSvg from "../../../components/AppSvg.tsx";
-import AppImage from "../../../components/AppImage.tsx";
-import AppList from "../../../components/AppList.tsx";
-import AppBox from "../../../components/AppBox.tsx";
+import NextStepCard from './NextStepCard.tsx'
+import NextStepLink from './NextStepLink.tsx'
+import AppSvg from '../../../components/AppSvg.tsx'
+import AppImage from '../../../components/AppImage.tsx'
+import AppList from '../../../components/AppList.tsx'
+import AppBox from '../../../components/AppBox.tsx'
 
 export default function NextSteps() {
   const socialNetworks = [
-    ["github-icon", "GitHub", "https://github.com/vitejs/vite"],
-    ["discord-icon", "Discord", "https://chat.vite.dev/"],
-    ["x-icon", "X.com", "https://x.com/vite_js"],
-    ["bluesky-icon", "Bluesky", "https://bsky.app/profile/vite.dev"],
-  ];
+    ['github-icon', 'GitHub', 'https://github.com/vitejs/vite'],
+    ['discord-icon', 'Discord', 'https://chat.vite.dev/'],
+    ['x-icon', 'X.com', 'https://x.com/vite_js'],
+    ['bluesky-icon', 'Bluesky', 'https://bsky.app/profile/vite.dev'],
+  ]
 
   return (
     <AppBox
       component="section"
       sx={{
-        display: "flex",
-        borderTop: "1px solid var(--border)",
-        textAlign: "left",
+        display: 'flex',
+        borderTop: '1px solid var(--border)',
+        textAlign: 'left',
         flexDirection: {
-          xs: "column",
-          md: "row",
+          xs: 'column',
+          md: 'row',
         },
       }}
     >
@@ -35,18 +35,18 @@ export default function NextSteps() {
         <AppBox
           component="ul"
           sx={{
-            listStyle: "none",
+            listStyle: 'none',
             p: 0,
-            display: "flex",
+            display: 'flex',
             gap: 1,
             mt: 4,
             flexWrap: {
-              xs: "wrap",
-              md: "nowrap",
+              xs: 'wrap',
+              md: 'nowrap',
             },
             justifyContent: {
-              xs: "center",
-              md: "flex-start",
+              xs: 'center',
+              md: 'flex-start',
             },
           }}
         >
@@ -57,10 +57,10 @@ export default function NextSteps() {
                 label="Explore Vite"
                 image={
                   <AppImage
-                    src={"vite"}
+                    src={'vite'}
                     sx={{
                       height: 18,
-                      width: "auto",
+                      width: 'auto',
                     }}
                   />
                 }
@@ -70,10 +70,10 @@ export default function NextSteps() {
                 label="Learn more"
                 image={
                   <AppImage
-                    src={"react"}
+                    src={'react'}
                     sx={{
                       height: 18,
-                      width: "auto",
+                      width: 'auto',
                     }}
                   />
                 }
@@ -91,16 +91,16 @@ export default function NextSteps() {
         <AppBox
           component="ul"
           sx={{
-            listStyle: "none",
+            listStyle: 'none',
             p: 0,
-            display: "flex",
+            display: 'flex',
             gap: 1,
             mt: 4,
-            flexWrap: "wrap",
+            flexWrap: 'wrap',
           }}
         >
           {socialNetworks.map(([icon, label, href]) => (
-            <AppBox component={"li"} key={label}>
+            <AppBox component={'li'} key={label}>
               <NextStepLink
                 href={href}
                 label={label}
@@ -119,5 +119,5 @@ export default function NextSteps() {
         </AppBox>
       </NextStepCard>
     </AppBox>
-  );
+  )
 }

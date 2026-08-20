@@ -1,15 +1,15 @@
-import AppSvg from "../../../components/AppSvg.tsx";
-import AppBox from "../../../components/AppBox.tsx";
-import AppTitle from "../../../components/AppTitle.tsx";
-import AppTypography from "../../../components/AppTypography.tsx";
-import type { ReactNode } from "react";
+import AppSvg from '../../../components/AppSvg.tsx'
+import AppBox from '../../../components/AppBox.tsx'
+import AppTitle from '../../../components/AppTitle.tsx'
+import AppTypography from '../../../components/AppTypography.tsx'
+import type { ReactNode } from 'react'
 
 interface Props {
-  icon: string;
-  title: string;
-  description: string;
-  children: ReactNode;
-  divider?: boolean;
+  icon: string
+  title: string
+  description: string
+  children: ReactNode
+  divider?: boolean
 }
 
 export default function NextStepCard({
@@ -22,24 +22,24 @@ export default function NextStepCard({
   return (
     <AppBox
       sx={{
-        flex: "1 1 0",
+        flex: '1 1 0',
         p: {
-          xs: "24px 20px",
+          xs: '24px 20px',
           md: 4,
         },
-        borderRight: divider ? "1px solid var(--border)" : undefined,
+        borderRight: divider ? '1px solid var(--border)' : undefined,
         textAlign: {
-          xs: "center",
-          md: "left",
+          xs: 'center',
+          md: 'left',
         },
-        "& .next-icon": {
+        '& .next-icon': {
           width: 22,
           height: 22,
           mb: 2,
         },
-        "@media (max-width:1024px)": {
-          borderRight: "none",
-          borderBottom: divider ? "1px solid var(--border)" : undefined,
+        '@media (max-width:1024px)': {
+          borderRight: 'none',
+          borderBottom: divider ? '1px solid var(--border)' : undefined,
         },
       }}
     >
@@ -50,9 +50,9 @@ export default function NextStepCard({
           width: 22,
         }}
       />
-      <AppTitle value={title} type={"subtitle"} />
+      <AppTitle value={title} type={'subtitle'} />
       <AppTypography value={description} />
       {children}
     </AppBox>
-  );
+  )
 }

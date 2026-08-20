@@ -1,8 +1,8 @@
-import { type ReactNode } from "react";
-import { Box } from "@mui/material";
+import { type ReactNode } from 'react'
+import { Box } from '@mui/material'
 
 interface Props {
-  items: ReactNode[];
+  items: ReactNode[]
 }
 
 export default function AppList({ items }: Props) {
@@ -10,18 +10,18 @@ export default function AppList({ items }: Props) {
     <Box
       component="ul"
       sx={{
-        listStyle: "none",
+        listStyle: 'none',
         p: 0,
-        display: "flex",
+        display: 'flex',
         gap: 1,
-        flexWrap: "wrap",
+        flexWrap: 'wrap',
       }}
     >
       {items.map((item, index) => (
-        <Box component={"li"} key={index}>
+        <Box component={'li'} key={index}>
           {item}
         </Box>
       ))}
     </Box>
-  );
+  )
 }

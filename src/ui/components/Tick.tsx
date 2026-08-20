@@ -1,26 +1,26 @@
-import AppBox from "../../components/AppBox.tsx";
+import AppBox from '../../components/AppBox.tsx'
 
 export default function Tick() {
   return (
     <AppBox
       sx={{
-        position: "relative",
-        width: "100%",
-        "&::before, &::after": {
+        position: 'relative',
+        width: '100%',
+        '&::before, &::after': {
           content: '""',
-          position: "absolute",
-          top: "-4.5px",
-          border: "5px solid transparent",
+          position: 'absolute',
+          top: '-4.5px',
+          border: '5px solid transparent',
         },
-        "&::before": {
+        '&::before': {
           left: 0,
-          borderLeftColor: "var(--border)",
+          borderLeftColor: 'var(--border)',
         },
-        "&::after": {
+        '&::after': {
           right: 0,
-          borderRightColor: "var(--border)",
+          borderRightColor: 'var(--border)',
         },
       }}
     />
-  );
+  )
 }
