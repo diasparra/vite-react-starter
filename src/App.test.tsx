@@ -29,7 +29,9 @@ describe('App', () => {
 
   it('renders the documentation links', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { name: 'Documentation' })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: 'Documentation' }),
+    ).toBeInTheDocument()
 
     const exploreVite = screen.getByRole('link', { name: /explore vite/i })
     expect(exploreVite).toHaveAttribute('href', 'https://vite.dev/')
